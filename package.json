@@ -1,0 +1,44 @@
+{
+  "name": "league-game-tracker",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "prepare": "husky install"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-solid": "^0.12.1",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.21",
+    "prettier": "3.0.0",
+    "solid-start-node": "^0.2.19",
+    "typescript": "^4.9.4",
+    "unocss": "^0.53.5",
+    "unocss-preset-primitives": "^0.0.1-beta.9",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "@kobalte/core": "^0.9.8",
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.8.2",
+    "@tanstack/solid-query": "5.0.0-alpha.20",
+    "@trpc/client": "^10.27.1",
+    "@trpc/server": "^10.27.1",
+    "solid-js": "^1.7.2",
+    "solid-start": "^0.2.26",
+    "solid-start-trpc": "^0.0.16",
+    "solid-trpc": "0.1.0-sssr.7",
+    "undici": "^5.15.1",
+    "zod": "^3.21.4"
+  },
+  "engines": {
+    "node": ">=16.8"
+  }
+}
