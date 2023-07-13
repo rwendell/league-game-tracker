@@ -1,5 +1,5 @@
-import { presetKobalte } from 'unocss-preset-primitives'
-import { defineConfig, presetUno } from 'unocss'
+import { presetKobalte } from "unocss-preset-primitives";
+import { defineConfig, presetUno } from "unocss";
 
 export default defineConfig({
   presets: [
@@ -7,4 +7,4 @@ export default defineConfig({
     // default options {prefix: 'ui'}
     presetKobalte(/* options */),
   ],
-})
+});

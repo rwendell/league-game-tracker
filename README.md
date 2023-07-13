@@ -33,9 +33,11 @@ By default, `npm run build` will generate a Node app that you can run with `npm 
 
 ## Styling
 
-* Kobalte
-* UnoCSS
+- Kobalte
+- UnoCSS
 
 ## Extensions
 
-* UnoCSS
+- UnoCSS
+
+// TODO remove PRPC for now

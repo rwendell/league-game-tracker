@@ -1,4 +1,6 @@
 // @refresh reload
+import { QueryProvider } from "@prpc/solid";
+import { QueryClient } from "@tanstack/solid-query";
 import { Suspense } from "solid-js";
 import {
   A,
@@ -12,20 +14,21 @@ import {
   Scripts,
   Title,
 } from "solid-start";
-import { api, queryClient } from "~/utils/api";
-import "./root.css";
+import "virtual:uno.css";
+
+const queryClient = new QueryClient();
 
 export default function Root() {
   return (
     <Html lang="en">
       <Head>
-        <Title>SolidStart - Bare</Title>
+        <Title>League Performance Review</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>
-        <Suspense>
-          <api.Provider queryClient={queryClient}>
+        <QueryProvider queryClient={queryClient}>
+          <Suspense>
             <ErrorBoundary>
               <A href="/">Index</A>
               <A href="/about">About</A>
@@ -33,16 +36,10 @@ export default function Root() {
                 <FileRoutes />
               </Routes>
             </ErrorBoundary>
-          </api.Provider>
-        </Suspense>
+          </Suspense>
+        </QueryProvider>
         <Scripts />
       </Body>
     </Html>
   );
-}
-
-class P{
-    get name(){
-        // no returns.
-    }
 }
